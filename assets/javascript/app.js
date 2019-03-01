@@ -25,7 +25,7 @@ $('#start').on("click", function() {
   var game = {
     correct: 0,
     incorrect: 0,
-    counter: 10,
+    counter: 20,
     countdown: function() {
       game.counter--;
       $('#counter').html(game.counter);
@@ -38,7 +38,7 @@ $('#start').on("click", function() {
   //timer decrease time by 1 second
       timer = setInterval(game.countdown, 1000);
   // Put timer in html
-      $('#subcontainer').prepend('<h2> Time Remaining: <span id="counter">10</span> Seconds </h2>')
+      $('#subcontainer').prepend('<h2> Time Remaining: <span id="counter">20</span> Seconds </h2>')
   // remove start button
       $('#start').remove();
   // Put the questions and answers in the html

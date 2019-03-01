@@ -2,10 +2,22 @@
 .jumbotron {
     padding: 2rem 1rem;
     text-align: center;
+    color: teal;
 }}
 
+body {
+    background: url("../images/just-waves.png")#001f3f;
+}
+
+#subcontainer {
+    text-align: center;
+    background-color:white;
+}
+
 h3 {
+    text-transform: uppercase;
     padding-top: 2em;
+    color: teal;
 }
 
 img {
