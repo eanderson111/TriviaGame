@@ -45,10 +45,16 @@ $('#start').on("click", function() {
       for (var i =0; i < questions.length; i++){
         $('#subcontainer').append('<h3>' + questions[i].question + '</h3>')
         for (var j = 0; j < questions[i].answers.length; j++){
-          $('#subcontainer').append('<input type="radio" name="question-' + i + '"value=" ' + questions[i].answers[j] + '">' + questions[i].answers[j])
+          $('#subcontainer').append('<input type="radio" class="radio" name="question-' + i + '"value="' + questions[i].answers[j] + '">  ' + questions[i].answers[j])
         }
       }
+      $('.radio').on('click', function() {
+        if($( "input:checked" ).length === 4 ) {
+            game.done();
+        }
+      })
     },
+
     done: function(){
       $.each($('input[name="question-0"]:checked'), function(){
         if($(this) === questions[0].correctAnswer){
