@@ -1,0 +1,12 @@
+@media (min-width: 576px) {
+.jumbotron {
+    padding: 2rem 1rem;
+}}
+
+h3 {
+    padding-top: 2em;
+}
+
+img {
+    width: 200px;
+}
