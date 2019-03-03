@@ -4,7 +4,7 @@ $('#start').on("click", function() {
   })
   
   var questions = [{
-    question: "What is the capital of Sweden",
+    question: "What is the capital of Sweden?",
     answers:[" Stockholm ", " Helsinki ", " Copenhagen ", " Amsterdam "],
     correctAnswer: " Stockholm "
   }, {
